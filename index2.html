@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
-    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="style2.css">
 
     <script src="https://kit.fontawesome.com/cfd50280ac.js" crossorigin="anonymous"></script>
 </head>
@@ -38,16 +38,6 @@
        element.classList.toggle("dark-mode");
     }
 
-    document.getElementsByTagName("label")[0].addEventListener("click",changeText);
-
-    function changeText(){
-        const A = new XMLHttpRequest();
-        A.onload = function (){
-            document.getElementsByClassName("div1")[0].innerHTML= this.responseText;
-        };
-        A.open("GET", "index2.html");
-        A.send();
-    }
 //     function myFunction() {
 //   var element = document.getElementsByClassName("sec1-dark")[0];
 //   element.classList.remove("sec1");
